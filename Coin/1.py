@@ -3,7 +3,6 @@ def partition(number):
     answer.add((number, ))
     for x in range(1, number):
         for y in partition(number - x):
-            print(y)
             answer.add(tuple(sorted((x, ) + y)))
     return answer
 

@@ -22,7 +22,6 @@ def dijkstra(start):
 	while q:
 		# 최단거리가 가장 짧은 노드에 대한 정보 꺼냐기
 		dist, now = heapq.heappop(q)
-		print(dist, now)
 
 		# 현재 노드가 이미 처리된 적이 있는 노드라면 무시
 		if distance[now] < dist:
